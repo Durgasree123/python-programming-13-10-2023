@@ -1,0 +1,36 @@
+#shopping mall bill
+#offer promo code
+#SHOP=50%,SUNDAY=40%
+Saree=500
+Jeans=900
+Dress=1000
+print("**Welcome to python shopping mall**")
+custname=input("Enter customer name:")
+custphno=input("Enter customer phone number:")
+SareeQ=int(input("Enter no. of sarees:"))
+JeansQ=int(input("enter no. of Jeans"))
+DressQ=int(input("Enter no. of Dresses:"))
+pc=input("Enter promo code:")
+bill=(Saree*SareeQ)+(Jeans*JeansQ)+(Dress*DressQ)
+if pc=="SHOP" or pc=="shop":
+    disc==bill*50/100
+elif pc=="SUNDAY" or pc=="sunday":
+    disc=bill*40/100
+elif bill>=2000:
+    disc=bill*20/100
+elif bill>=1000:
+    disc=bill*10/100
+elif bill>=500:
+    disc=bill*5/100
+else:
+    disc=bill*3/100
+tbill=bill-disc#500
+gst=tbill*12/100#60
+obill=tbill+gst
+print('customer name:',custname)
+print('customer phno:',custphno)
+print('bill:',bill)
+print('Discount:',disc)
+print('Gst 12%:',gst)
+print('Bill to be paid:',obill)
+print('*Thank you!Visit Again**')
